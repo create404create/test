@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Info Lookup Tool</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+rel="stylesheet">
+
+</head>
+
+<body>
+
+<div class="header">
+
+<div class="logo">
+<i class="fa-solid fa-magnifying-glass"></i>
+<h1>Info Lookup</h1>
+</div>
+
+</div>
+
+
+<div class="container">
+
+<div class="search-container">
+
+<input
+id="phoneInput"
+type="text"
+placeholder="Enter Phone Number (XXX) XXX-XXXX"
+>
+
+<button id="searchButton">
+
+<i class="fas fa-search"></i>
+Search
+
+</button>
+
+</div>
+
+
+<div id="loader" class="loader"></div>
+
+
+<div id="error" class="error"></div>
+
+
+<div class="section">
+
+<table class="data-table">
+
+<tr>
+<td>State</td>
+<td id="state">...</td>
+</tr>
+
+<tr>
+<td>DNC Status</td>
+<td id="dncStatus">...</td>
+</tr>
+
+<tr>
+<td>Litigator</td>
+<td id="litigator">...</td>
+</tr>
+
+<tr>
+<td>Blacklist</td>
+<td id="blacklist">...</td>
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="section">
+
+<div class="person-header">
+
+<div class="person-name" id="personName">
+Person name
+</div>
+
+<div class="person-details">
+
+<span id="personAge">Age</span>
+
+<span id="personStatus">Status</span>
+
+</div>
+
+</div>
+
+
+<table class="address-table">
+
+<thead>
+
+<tr>
+
+<th>LIVES AT</th>
+
+<th>CITY</th>
+
+<th>STATE</th>
+
+<th>ZIP</th>
+
+</tr>
+
+</thead>
+
+<tbody id="addressTableBody">
+
+<tr>
+<td>ABC</td>
+<td>XYZ</td>
+<td>XX</td>
+<td>12345</td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
